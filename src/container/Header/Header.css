@@ -1,0 +1,38 @@
+.food__list {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+.gr {
+  position: relative;
+  z-index: 1;
+  margin-left: 110px;
+  margin-top: 15px;
+}
+.nav__item {
+  background-color: #1F1D2B;
+  width: 92px;
+  text-align: center;
+  padding-right: 20px;
+  padding-bottom: 16px;
+}
+.nav__img {
+  padding: 10px 0; 
+}
+.nav__item:nth-child(8) {
+  padding-bottom: 27px;
+}
+.nav__link {
+  color: #E47967;
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 39px;
+}
+.active {
+  color: #fff;
+  padding: 18px;
+  background-color: #E47967;
+  border-radius: 15px;
+}
