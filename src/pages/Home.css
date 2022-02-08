@@ -1,3 +1,6 @@
+.home {
+  width: 800px;
+}
 .home__des {
   display: flex;
   justify-content: space-between; 
@@ -43,11 +46,21 @@
   margin-top: 24px;
 }
 .home__nav-item {
-  margin-left: 32px;
+  margin-left: 50px;
 }
 .home__nav-item:nth-child(1) {
   margin-left: 0;
 }
 .home__nav-link {
+  color: #fff;
+}
+.result {
+  margin-top: 34px;
+}
+.result__title {
+  margin-bottom: 44px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
   color: #fff;
 }

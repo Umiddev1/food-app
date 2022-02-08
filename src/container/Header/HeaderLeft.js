@@ -12,9 +12,8 @@ import { Routes, Route } from "react-router-dom";
 import './Header.css';
 function HeaderLeft() {
   return (
-    <div className="container">
        <div className="food__gr">
-      <ul className="food__list"> 
+      <ul className="food__list p-0"> 
         <li className="nav__item"><Link to='/'><img className="nav__img" src={Logo} alt="logo" /></Link></li>
         <li className="nav__item"><NavLink className="nav__link"  activeclassname="actives" to='/'><i className="far fa-home-alt"></i></NavLink></li>
         <li className="nav__item"><NavLink className="nav__link"  activeclassname="actives" to='/discount'><i className="fal fa-badge-percent"></i></NavLink></li>
@@ -35,7 +34,6 @@ function HeaderLeft() {
         <Route path="/exit" element={<Exit />} />
       </Routes>
       </div>
-    </div>
     </div>
    
   )

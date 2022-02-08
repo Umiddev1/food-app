@@ -1,0 +1,41 @@
+.result__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.result__item {
+  width: 192px;
+  margin-left: 28px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background-color: #1F1D2B;
+  position: relative;
+}
+.result__item:nth-child(1) {
+  margin-left: 0;
+}
+.result__item:nth-child(4) {
+  margin-left: 0;
+}
+.result__item:nth-child(7) {
+  margin-left: 0;
+}
+.result__item:nth-child(10) {
+  margin-left: 0;
+}
+.result__img {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  position: relative;
+  left: 29px;
+  bottom: 25px;
+}
+.result__name {
+  color: #fff;
+}
+.result__price {
+  color: #fff;
+}
+.result__aviable {
+  color: #fff;
+}

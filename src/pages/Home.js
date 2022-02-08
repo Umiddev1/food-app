@@ -26,7 +26,7 @@ function Home() {
         </div>
       </div>
       <div className="home__nav">
-        <ul className="home__nav-list">
+        <ul className="home__nav-list p-0">
           <li onClick={() => handleArr("Hot Dishes")} className="home__nav-item"><a className="home__nav-link" href="#">Hot Dishes</a></li>
           <li onClick={() => handleArr("Cold Dishes")} className="home__nav-item"><a className="home__nav-link" href="#">Cold Dishes</a></li>
           <li onClick={() => handleArr("Soup")} className="home__nav-item"><a className="home__nav-link" href="#">Soup</a></li>
@@ -35,10 +35,23 @@ function Home() {
           <li onClick={() => handleArr("Dessert")} className="home__nav-item"><a className="home__nav-link" href="#">Dessert</a></li>
         </ul>
         <div className="home__nav-result result">
-            <ul className="result__list"> 
-
+          <h2 className="result__title">Choose Dishes Dine In</h2>
+            <ul className="result__list p-0"> 
+              {
+                arr.map((items, index) => (
+                  <Item 
+                  key={index}
+                  img={items.foodImg}
+                  name={items.foodName}
+                  price={items.foodPrice}
+                  aviable={items.isAvailable}
+                  />
+                
+                ))
+              }
             </ul>
         </div>
+        <div>hello</div>
       </div>
     </div>
   )
